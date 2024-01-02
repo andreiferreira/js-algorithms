@@ -1,4 +1,4 @@
-const listaN = [1, 30, 44, 56, 100, 111, 222, 245, 300, 333, 350]
+const list = [1, 30, 44, 56, 100, 111, 222, 245, 300, 333, 350]
 
 function buscaBinaria(list, item, begin=0, end) {
   
@@ -26,4 +26,4 @@ function buscaBinaria(list, item, begin=0, end) {
 }
   
 
-buscaBinaria(listaN, 122)
+buscaBinaria(list, 122)
