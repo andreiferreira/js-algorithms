@@ -1,6 +1,6 @@
 const list = [1, 30, 44, 56, 100, 111, 222, 245, 300, 333, 350]
 
-function buscaBinaria(list, item, begin=0, end) {
+const binarySeach = (list, item, begin=0, end) => {
   
   let middle;
   
@@ -16,9 +16,9 @@ function buscaBinaria(list, item, begin=0, end) {
     }
     
     if(item < list[middle]) {
-      return buscaBinaria(list, item, begin, middle -1)
+      return binarySeach(list, item, begin, middle -1)
     }else {
-      return buscaBinaria(list, item, middle + 1, end)
+      return binarySeach(list, item, middle + 1, end)
     }
   }
 
@@ -26,4 +26,4 @@ function buscaBinaria(list, item, begin=0, end) {
 }
   
 
-buscaBinaria(list, 122)
+WbinarySeach(list, 300)
